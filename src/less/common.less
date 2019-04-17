@@ -1,0 +1,322 @@
+@import "modules/reset";
+@import "modules/public";
+//模拟滚动条样式
+@import (inline) "modules/vue-bar.css";
+
+html,body{
+    background: #efefef;
+    font-size: 12px;
+}
+
+//element reset
+.custom-style{
+    .el-range-separator, .el-range__close-icon, .el-range__icon{
+        line-height: 22px;
+    }
+    .el-table{
+        font-size: 12px;
+    }
+    .el-table th{
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .el-table .el-table-column--selection .cell{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .el-form-item{
+        margin-bottom: 15px;
+    }
+    .el-form--inline .el-form-item{
+        margin-right: 15px;
+    }
+    .el-form-item__label{
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .el-form-item__content{
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .el-radio__label{
+        font-size: 12px;
+    }
+    .el-breadcrumb{
+        font-size: 12px;
+    }
+    .el-menu-item, .el-submenu__title {
+        height: 40px;
+        line-height: 40px;
+    }
+    .el-button.is-disabled {
+        background-color: #c8c9cc;
+        border-color: #c8c9cc;
+    }
+    .el-button.el-button--default.is-disabled {
+        color: #ffffff;
+    }
+    .el-button.el-button--text.is-disabled {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .el-input__inner{
+        padding: 0 8px;
+    }
+    .el-input--prefix .el-input__inner{
+        padding-left: 30px;
+    }
+    .el-input--suffix .el-input__inner{
+        padding-right: 30px;
+    }
+
+    .el-table .warning-row {
+        background: #FDF5E6;
+    }
+}
+
+//公共样式
+.cm-pagination-wrap{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cm-text-red{
+    color: #e20000;
+}
+.cm-text-green{
+    color: #13ce66;
+}
+.cm-text-orange{
+    color: #FF9640;
+}
+.cm-text-blue{
+    color: #20a0ff;
+}
+.cm-text-light{
+    color: #999999;
+}
+.cm-cursor {
+    cursor: pointer;
+}
+.cm-confirm-box{
+    width: 290px !important;
+}
+
+.cm-alert-box{
+    width: 290px !important;
+}
+
+.cm-dialog-390px{
+    width: 390px !important;
+}
+
+.cm-dialog-500px{
+    width: 500px !important;
+}
+
+.cm-dialog-transfer{
+    width: 930px !important;
+}
+
+.cm-uploader{
+    .el-upload{
+        border: 1px dashed #c0ccda;
+        background-color: #fbfdff;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    &.error .el-upload{
+        border-color: #e20000 !important;
+    }
+    .el-upload:hover{
+        border-color: #FF9640;
+    }
+    .cm-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 148px;
+        height: 148px;
+        line-height: 148px;
+        text-align: center;
+    }
+    .cm-uploader-img {
+        width: 148px;
+        height: 148px;
+        display: block;
+    }
+}
+
+.cm-file-upload-box{
+    padding-left: 10px;
+    .title{
+        font-size: 20px!important;
+        padding-bottom: 0!important;
+        font-weight: normal!important;
+        color: #48576a!important;
+    }
+    .uploader{
+        padding: 20px 0 10px 0;
+    }
+    .tips{
+        font-size: 14px;
+    }
+    a.red{
+        color: #c23400;
+    }
+    .icon{
+        margin: 0;
+    }
+    .red{
+        color: #c23400;
+    }
+    .dark{
+        color: #b4b4b4;
+    }
+    .yellow{
+        color: #ffd918;
+    }
+    .green{
+        color: #00c204;
+    }
+    .btn-wrap{
+        padding-top: 20px;
+        padding-right: 15px;
+        overflow: hidden;
+        line-height: 30px;
+        text-align: right;
+    }
+    .btn-wrap-no-download-btn{
+        padding-right: 10px;
+        text-align: center;
+    }
+    .el-button--text{
+        font-size: 14px;
+    }
+}
+
+.cm-card{
+    background-color: #ffffff;
+}
+.cm-card-title{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 30px;
+    overflow: hidden;
+}
+.cm-card-content{
+    padding: 25px;
+    .cont-sub-title{
+        padding: 0 10px 20px 20px;
+        font-size: 14px;
+        line-height: 20px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            overflow: hidden;
+            background-color: #FF9640;
+        }
+    }
+}
+
+.cm-page {
+    box-shadow: 0 0 5px #cccccc;
+    background-color: #ffffff;
+}
+.cm-page-title {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 30px;
+    overflow: hidden;
+    .el-button{
+        vertical-align: top;
+    }
+}
+.cm-page-content {
+    padding: 25px;
+    .title {
+        color: #333333;
+        font-size: 16px;
+        padding-bottom: 22px;
+        font-weight: bold;
+    }
+    .icon-title {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        padding: 0 0 22px 15px;
+        &::before{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #FF9640;
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+    }
+}
+
+.cm-form-wrap{
+    padding: 20px 20px 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.cm-basic-msg-table{
+    border: none;
+    border-collapse: collapse;
+    td{
+        padding: 10px 20px;
+        border-left: 1px solid #e2e2e2;
+        white-space: nowrap;
+        word-wrap: normal;
+        word-break: keep-all;
+        &:first-child{
+            padding-left: 0;
+            border-left: none;
+        }
+    }
+}
+
+.cm-form-table{
+    border: none;
+    td{
+        padding: 10px;
+        white-space: nowrap;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+}
+
+.line {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px dashed #d3d3d3;
+    margin-bottom: 22px;
+}
+
+.clear-border{
+    .el-input__inner{
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none !important;
+    }
+    .el-input--suffix{
+        .el-input__inner{
+            padding-right: 22px;
+        }
+    }
+    .el-input__suffix{
+        right: 0;
+    }
+}
+

@@ -1,0 +1,48 @@
+$--color-primary: #FF9640;
+
+/// color|[成功颜色,success color,success color]|SecondaryColor|1
+$--color-success: #67C23A;
+/// color|[警告颜色,warning color,warning color]|SecondaryColor|1
+$--color-warning: #E6A23C;
+/// color|[危险颜色,danger color,danger color]|SecondaryColor|1
+$--color-danger: #F56C6C;
+/// color|[信息颜色,info color,info color]|SecondaryColor|1
+$--color-info: #409eff;
+
+// 默认字体大小
+$--font-size-base: 12px;
+//  Button
+// 上下padding
+$--button-padding-vertical: 8px;
+// 左右padding
+$--button-padding-horizontal: 10px;
+// type == small
+$--button-small-padding-horizontal: 6px;
+$--button-small-padding-vertical: 8px;
+//  type == mini
+$--button-mini-padding-horizontal: 4px;
+$--button-mini-padding-vertical: 6px;
+$--button-disabled-font-color: #dadbdc;
+$--button-disabled-background-color: #f5f6f7;
+//Input
+// 高度
+$--input-height: 30px;
+
+// Table
+$--table-border: 1px solid #dcdfe6;
+$--table-border-color: #dcdfe6;
+// header font color
+$--table-header-color: #666666;
+// header background color
+$--table-header-background: #f2f3f4;
+$--table-header-background-color: #f2f3f4;
+
+// Checkbox
+$--checkbox-font-size: 12px;
+
+// Menu
+$--menu-item-fill: #333333;
+$--menu-item-color: #ffffff;
+$--menu-item-hover-fill: #FF9640;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";

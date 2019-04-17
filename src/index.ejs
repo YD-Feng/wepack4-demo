@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <% if (htmlWebpackPlugin.options.cdnHost) { %>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="<%= htmlWebpackPlugin.options.cdnHost %>">
+    <% } %>
+    <script src="<%= htmlWebpackPlugin.options.publicPath %>/libs/aliyun-oss-sdk/aliyun-oss-sdk.min.js"></script>
+    <title>财务中心 - 掌上快销</title>
+</head>
+
+<body class="custom-style">
+    <div id="app"></div>
+    <input type="text" style="width: 0; height: 0; border: none; padding: 0; opacity: 0; position: absolute;" id="hiddenInput">
+</body>
+</html>
